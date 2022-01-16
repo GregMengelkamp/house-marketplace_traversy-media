@@ -115,7 +115,10 @@ function CreateListing() {
       geolocation.lng = longitude
     }
 
-    // Store image in firebase
+    toast.error('Functionality disabled. This page is a mock-up although existing data is fetched from a live API.')
+    setLoading(false)
+
+    /* // Store image in firebase
     const storeImage = async (image) => {
       return new Promise((resolve, reject) => {
         const storage = getStorage()
@@ -179,7 +182,7 @@ function CreateListing() {
     const docRef = await addDoc(collection(db, 'listings'), formDataCopy)
     setLoading(false)
     toast.success('Listing saved')
-    navigate(`/category/${formDataCopy.type}/${docRef.id}`)
+    navigate(`/category/${formDataCopy.type}/${docRef.id}`) */
   }
 
   const onMutate = (e) => {

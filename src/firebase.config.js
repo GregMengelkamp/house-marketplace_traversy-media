@@ -1,16 +1,20 @@
-import { initializeApp } from 'firebase/app'
-import { getFirestore } from 'firebase/firestore'
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore"
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyDA8LVcBB6ZuFMGtZZLEh_veJ44WGrNRdE',
-  authDomain: 'house-marketplace-app-fb1d0.firebaseapp.com',
-  projectId: 'house-marketplace-app-fb1d0',
-  storageBucket: 'house-marketplace-app-fb1d0.appspot.com',
-  messagingSenderId: '832068369979',
-  appId: '1:832068369979:web:dce177da9bfc60a4b4e61e',
-}
+  apiKey: "AIzaSyBELCbWms5NBmPfBBJejXyf699qi5EHd8U",
+  authDomain: "house-marketplace-app-d2d86.firebaseapp.com",
+  projectId: "house-marketplace-app-d2d86",
+  storageBucket: "house-marketplace-app-d2d86.appspot.com",
+  messagingSenderId: "40986081272",
+  appId: "1:40986081272:web:42b05714af6c974cf7480d"
+};
 
 // Initialize Firebase
-initializeApp(firebaseConfig)
+// eslint-disable-next-line
+const app = initializeApp(firebaseConfig);
 export const db = getFirestore()
